@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La Última Página</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>La Última Página</h1>
+    <p>Historias únicas que no olvidarás.</p>
+  </header>
+
+  <main>
+    <section class="catalogo">
+      <div class="libro">
+        <img src="portada_el_codigo_del_olvido.png" alt="Portada El Código del Olvido" />
+        <h2>El Código del Olvido</h2>
+        <p>Género: Misterio</p>
+        <button onclick="abrirDetalles()">Ver más</button>
+      </div>
+    </section>
+
+    <section id="detallesLibro" class="oculto">
+      <h2>El Código del Olvido</h2>
+      <p>Una historia llena de misterio, memoria y oscuros secretos.</p>
+      <a href="El_Codigo_del_Olvido_CORREGIDO_FINAL.pdf" download>📥 Descargar PDF</a>
+      <a href="https://ko-fi.com/" target="_blank">💸 Donar</a>
+
+      <div class="reseñas">
+        <h3>Reseñas:</h3>
+        <form onsubmit="agregarReseña(event)">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" required />
+          <label for="comentario">Comentario:</label>
+          <textarea id="comentario" required></textarea>
+          <label for="estrellas">Puntuación:</label>
+          <select id="estrellas">
+            <option value="5">⭐⭐⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="1">⭐</option>
+          </select>
+          <button type="submit">Enviar</button>
+        </form>
+        <ul id="listaReseñas"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Síguenos en 
+      <a href="https://www.tiktok.com/@laultimapagina.site" target="_blank">TikTok</a> y 
+      <a href="https://www.instagram.com/laultimapagina.site/" target="_blank">Instagram</a>
+    </p>
+    <p>Este contenido ha sido desarrollado con asistencia digital.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

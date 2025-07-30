@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background: #222;
+  padding: 1em;
+}
+
+.catalogo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2em;
+}
+
+.libro {
+  background: #333;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 1em;
+  width: 200px;
+}
+
+.libro img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+button {
+  background: #00b894;
+  border: none;
+  padding: 0.5em 1em;
+  color: white;
+  margin-top: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+a {
+  color: #00cec9;
+  text-decoration: none;
+  margin: 0 0.5em;
+}
+
+footer {
+  background: #222;
+  padding: 1em;
+  font-size: 0.9em;
+}
+
+.oculto {
+  display: none;
+}
+
+.reseñas {
+  margin-top: 2em;
+}
+
+.reseñas ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  max-width: 500px;
+  margin: auto;
+}
+
+.reseñas li {
+  background: #2d3436;
+  padding: 1em;
+  margin: 0.5em 0;
+  border-radius: 5px;
+}
